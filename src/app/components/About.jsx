@@ -53,7 +53,10 @@ export default function About() {
             }}
           >
             {/* Left Image */}
-            <div className="about-col" style={{ flex: "0 0 50%", maxWidth: "50%" }}>
+            <div
+              className="about-col"
+              style={{ flex: "0 0 50%", maxWidth: "50%" }}
+            >
               <div style={{ position: "relative" }}>
                 <img
                   src="/assets/images/about-pic.jpg"
@@ -69,7 +72,11 @@ export default function About() {
                     display: "inline-block",
                   }}
                 >
-                  <img src="/assets/images/play.png" alt="Play" style={{ display: "block" }} />
+                  <img
+                    src="/assets/images/play.png"
+                    alt="Play"
+                    style={{ display: "block" }}
+                  />
                 </a>
               </div>
             </div>
@@ -96,13 +103,17 @@ export default function About() {
                 Story About Us
               </h2>
               <p style={{ color: "#6b6b6b", marginBottom: "10px" }}>
-                Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
-                sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet
-                nibh vulputate cursus a amet.
+                Our mission is to empower fitness centers with smart digital
+                solutions. We provide modern gym management software that helps
+                track members, schedule classes, manage payments, and simplify
+                day-to-day operations. With our platform, gyms can focus more on
+                fitness while we take care of the management.
               </p>
               <p style={{ color: "#6b6b6b", marginBottom: "50px" }}>
-                Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida quam
-                semper libero sit amet.
+                From small studios to large fitness chains, we deliver
+                easy-to-use, reliable, and scalable tools designed for growth.
+                Our goal is to help gyms build stronger communities, improve
+                efficiency, and create a better experience for every member.
               </p>
               <a
                 href="#"
@@ -127,185 +138,204 @@ export default function About() {
 
       {/* Services Section */}
       {/* Services Section */}
-<section style={{ padding: "60px 0", backgroundColor: "#fff" }}>
-  <div style={{ width: "100%", margin: "0 auto" }}>
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      
-      {/* Left column */}
-      <div
-        className="service-col"
-        style={{
-          flex: "0 0 50%",
-          maxWidth: "50%",
-          backgroundColor: "#2f2f2f",
-        }}
-      >
-        <img
-          src="/assets/images/service-pic.jpg"
-          alt=""
-          style={{
-            width: "100%",
-            display: "block",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-
-      {/* Right column */}
-      <div
-        className="service-col"
-        style={{
-          flex: "0 0 50%",
-          maxWidth: "50%",
-          backgroundColor: "#141414",
-          color: "#fff",
-        }}
-      >
-        <div style={{ padding: "30px" }}>
+      <section style={{ padding: "60px 0", backgroundColor: "#fff" }}>
+        <div style={{ width: "100%", margin: "0 auto" }}>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
-            
-            {/* Item 1 */}
+            {/* Left column */}
+            <div
+              className="service-col"
+              style={{
+                flex: "0 0 50%",
+                maxWidth: "50%",
+                backgroundColor: "#2f2f2f",
+              }}
+            >
+              <img
+                src="/assets/images/service-pic.jpg"
+                alt=""
+                style={{
+                  width: "100%",
+                  display: "block",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+
+            {/* Right column */}
             <div
               className="service-col"
               style={{
                 flex: "0 0 50%",
                 maxWidth: "50%",
                 backgroundColor: "#141414",
+                color: "#fff",
               }}
             >
-              <div
-                style={{
-                  padding: "70px 30px 30px 100px",
-                  marginBottom: "30px",
-                  position: "relative",
-                  borderRadius: "8px",
-                }}
-              >
-                <img
-                  src="/assets/images/service-icon-1.png"
-                  alt=""
-                  style={{
-                    position: "absolute",
-                    left: "40px",
-                    top: "35px",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-                <h4 style={{ fontSize: "20px", marginBottom: "10px", color: "#fff" }}>
-                  Strategies
-                </h4>
-                <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
-                  Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
-                  urient montes.
-                </p>
-              </div>
+              <div style={{ padding: "30px" }}>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  {/* Item 1 */}
+                  <div
+                    className="service-col"
+                    style={{
+                      flex: "0 0 50%",
+                      maxWidth: "50%",
+                      backgroundColor: "#141414",
+                    }}
+                  >
+                    <div
+                      style={{
+                        padding: "70px 30px 30px 100px",
+                        marginBottom: "30px",
+                        position: "relative",
+                        borderRadius: "8px",
+                      }}
+                    >
+                      <img
+                        src="/assets/images/service-icon-1.png"
+                        alt=""
+                        style={{
+                          position: "absolute",
+                          left: "40px",
+                          top: "35px",
+                          width: "50px",
+                          height: "50px",
+                        }}
+                      />
+                      <h4
+                        style={{
+                          fontSize: "20px",
+                          marginBottom: "10px",
+                          color: "#fff",
+                        }}
+                      >
+                        Strategies
+                      </h4>
+                      <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
+                        Aenean massa. Cum sociis Theme et natoque penatibus et
+                        magnis dis part urient montes.
+                      </p>
+                    </div>
 
-              {/* Item 2 */}
-              <div
-                style={{
-                  padding: "70px 30px 30px 100px",
-                  marginBottom: "30px",
-                  position: "relative",
-                  borderRadius: "8px",
-                }}
-              >
-                <img
-                  src="/assets/images/service-icon-3.png"
-                  alt=""
-                  style={{
-                    position: "absolute",
-                    left: "40px",
-                    top: "35px",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-                <h4 style={{ fontSize: "20px", marginBottom: "10px", color: "#fff" }}>
-                  Workout
-                </h4>
-                <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
-                  Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
-                  urient montes.
-                </p>
+                    {/* Item 2 */}
+                    <div
+                      style={{
+                        padding: "70px 30px 30px 100px",
+                        marginBottom: "30px",
+                        position: "relative",
+                        borderRadius: "8px",
+                      }}
+                    >
+                      <img
+                        src="/assets/images/service-icon-3.png"
+                        alt=""
+                        style={{
+                          position: "absolute",
+                          left: "40px",
+                          top: "35px",
+                          width: "50px",
+                          height: "50px",
+                        }}
+                      />
+                      <h4
+                        style={{
+                          fontSize: "20px",
+                          marginBottom: "10px",
+                          color: "#fff",
+                        }}
+                      >
+                        Workout
+                      </h4>
+                      <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
+                        Aenean massa. Cum sociis Theme et natoque penatibus et
+                        magnis dis part urient montes.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Item 3 & 4 */}
+                  <div
+                    className="service-col"
+                    style={{
+                      flex: "0 0 50%",
+                      maxWidth: "50%",
+                      backgroundColor: "#141414",
+                    }}
+                  >
+                    <div
+                      style={{
+                        padding: "70px 30px 30px 100px",
+                        marginBottom: "30px",
+                        position: "relative",
+                        borderRadius: "8px",
+                      }}
+                    >
+                      <img
+                        src="/assets/images/service-icon-2.png"
+                        alt=""
+                        style={{
+                          position: "absolute",
+                          left: "40px",
+                          top: "35px",
+                          width: "50px",
+                          height: "50px",
+                        }}
+                      />
+                      <h4
+                        style={{
+                          fontSize: "20px",
+                          marginBottom: "10px",
+                          color: "#fff",
+                        }}
+                      >
+                        Yoga
+                      </h4>
+                      <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
+                        Aenean massa. Cum sociis Theme et natoque penatibus et
+                        magnis dis part urient montes.
+                      </p>
+                    </div>
+
+                    <div
+                      style={{
+                        padding: "70px 30px 30px 100px",
+                        marginBottom: "30px",
+                        position: "relative",
+                        borderRadius: "8px",
+                      }}
+                    >
+                      <img
+                        src="/assets/images/service-icon-4.png"
+                        alt=""
+                        style={{
+                          position: "absolute",
+                          left: "40px",
+                          top: "35px",
+                          width: "50px",
+                          height: "50px",
+                        }}
+                      />
+                      <h4
+                        style={{
+                          fontSize: "20px",
+                          marginBottom: "10px",
+                          color: "#fff",
+                        }}
+                      >
+                        Weight Loss
+                      </h4>
+                      <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
+                        Aenean massa. Cum sociis Theme et natoque penatibus et
+                        magnis dis part urient montes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/* Item 3 & 4 */}
-            <div
-              className="service-col"
-              style={{
-                flex: "0 0 50%",
-                maxWidth: "50%",
-                backgroundColor: "#141414",
-              }}
-            >
-              <div
-                style={{
-                  padding: "70px 30px 30px 100px",
-                  marginBottom: "30px",
-                  position: "relative",
-                  borderRadius: "8px",
-                }}
-              >
-                <img
-                  src="/assets/images/service-icon-2.png"
-                  alt=""
-                  style={{
-                    position: "absolute",
-                    left: "40px",
-                    top: "35px",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-                <h4 style={{ fontSize: "20px", marginBottom: "10px", color: "#fff" }}>
-                  Yoga
-                </h4>
-                <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
-                  Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
-                  urient montes.
-                </p>
-              </div>
-
-              <div
-                style={{
-                  padding: "70px 30px 30px 100px",
-                  marginBottom: "30px",
-                  position: "relative",
-                  borderRadius: "8px",
-                }}
-              >
-                <img
-                  src="/assets/images/service-icon-4.png"
-                  alt=""
-                  style={{
-                    position: "absolute",
-                    left: "40px",
-                    top: "35px",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-                <h4 style={{ fontSize: "20px", marginBottom: "10px", color: "#fff" }}>
-                  Weight Loss
-                </h4>
-                <p style={{ color: "#6b6b6b", lineHeight: "1.6" }}>
-                  Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
-                  urient montes.
-                </p>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+      </section>
     </>
   );
 }

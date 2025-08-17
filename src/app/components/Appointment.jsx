@@ -1,14 +1,23 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function Appointment() {
+  const classItems = [
+    { img: "/assets/images/class-1.jpg", tag: "STRENGTH", title: "Weightlifting" },
+    { img: "/assets/images/class-2.jpg", tag: "Cardio", title: "Indoor cycling" },
+    { img: "/assets/images/class-3.jpg", tag: "STRENGTH", title: "Kettlebell power" },
+    { img: "/assets/images/class-4.jpg", tag: "Cardio", title: "Indoor cycling", big: true },
+    { img: "/assets/images/class-5.jpg", tag: "Training", title: "Boxing", big: true },
+  ];
+
   return (
     <>
       {/* Classes Section */}
       <section
         style={{
           padding: "60px 0",
-          backgroundColor: "#111", // dark background
+          backgroundColor: "#111",
         }}
       >
         <div style={{ width: "90%", margin: "0 auto" }}>
@@ -45,15 +54,13 @@ function Appointment() {
               gap: "20px",
             }}
           >
-            {[
-              { img: "/assets/images/class-1.jpg", tag: "STRENGTH", title: "Weightlifting" },
-              { img: "/assets/images/class-2.jpg", tag: "Cardio", title: "Indoor cycling" },
-              { img: "/assets/images/class-3.jpg", tag: "STRENGTH", title: "Kettlebell power" },
-              { img: "/assets/images/class-4.jpg", tag: "Cardio", title: "Indoor cycling", big: true },
-              { img: "/assets/images/class-5.jpg", tag: "Training", title: "Boxing", big: true },
-            ].map((item, index) => (
-              <div
+            {classItems.map((item, index) => (
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: false, amount: 0.2 }} // animation repeats on scroll
                 style={{
                   overflow: "hidden",
                   marginBottom: "30px",
@@ -135,7 +142,7 @@ function Appointment() {
                     →
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
