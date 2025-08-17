@@ -1,4 +1,14 @@
 import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+{
+  /* <div style={socialIcons}>
+  <a href="#" style={socialLink}><FaFacebook /></a>
+  <a href="#" style={socialLink}><FaTwitter /></a>
+  <a href="#" style={socialLink}><FaInstagram /></a>
+  <a href="#" style={socialLink}><FaLinkedin /></a>
+</div> */
+}
 
 export default function Footer() {
   const footerStyle = {
@@ -116,16 +126,16 @@ export default function Footer() {
           <h4>Follow Us</h4>
           <div style={socialIcons}>
             <a href="#" style={socialLink}>
-              <i className="fa fa-facebook"></i>
+              <FaFacebook />
             </a>
             <a href="#" style={socialLink}>
-              <i className="fa fa-twitter"></i>
+              <FaTwitter />
             </a>
             <a href="#" style={socialLink}>
-              <i className="fa fa-instagram"></i>
+              <FaInstagram />
             </a>
             <a href="#" style={socialLink}>
-              <i className="fa fa-linkedin"></i>
+              <FaLinkedin />
             </a>
           </div>
         </div>

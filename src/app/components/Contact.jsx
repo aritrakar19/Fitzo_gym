@@ -59,10 +59,12 @@ export default function Contact() {
                     padding: "18px",
                     fontSize: "13px",
                     height: "150px",
+                    backgroundColor: "#fff", // white background
                   }}
                   placeholder="Enter Message"
                 />
               </div>
+
               <div
                 style={{
                   display: "flex",
@@ -81,6 +83,7 @@ export default function Contact() {
                     padding: "18px",
                     fontSize: "13px",
                     minWidth: "250px",
+                    backgroundColor: "#fff", // white background
                   }}
                 />
                 <input
@@ -92,9 +95,11 @@ export default function Contact() {
                     padding: "18px",
                     fontSize: "13px",
                     minWidth: "250px",
+                    backgroundColor: "#fff", // white background
                   }}
                 />
               </div>
+
               <div style={{ marginBottom: "30px" }}>
                 <input
                   type="text"
@@ -104,9 +109,11 @@ export default function Contact() {
                     border: "1px solid #e5e6e9",
                     padding: "18px",
                     fontSize: "13px",
+                    backgroundColor: "#fff", // white background
                   }}
                 />
               </div>
+
               <div style={{ textAlign: "center" }}>
                 <button
                   type="submit"
@@ -131,7 +138,7 @@ export default function Contact() {
         <style jsx>{`
           @media (max-width: 768px) {
             .contact-wrapper {
-            //   padding: 20px;
+              //   padding: 20px;
             }
             .input-row {
               flex-direction: column;
